@@ -14,8 +14,8 @@ p, li {
   font-size: 20px;
 }
 
-#main {
-  margin-bottom: 10px;
+.main {
+  margin-bottom: 100px;
 }
 
 html {
