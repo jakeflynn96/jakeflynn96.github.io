@@ -2,18 +2,42 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Sport</title>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,615;0,700;0,800;1,400;1,500;1,600;1,615;1,700;1,800&display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Sport</title>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,615;0,700;0,800;1,400;1,500;1,600;1,615;1,700;1,800&display=swap" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script>
+		$(document).ready(function(){
+		  $("a").on('click', function(event) {
+		
+			
+			if (this.hash !== "") {
+			  
+			  event.preventDefault();
+		
+			  
+			  var hash = this.hash;
+		
+			  
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 800, function(){
+		   
+				
+				window.location.hash = hash;
+			  });
+			} 
+		  });
+		});
+		</script>
 </head>
 
 <body>
 	<div class="title">
 		<h1>Sport</h1>
 	</div>
-	<div>
+	<div class="main" id="section1">
 		<p>There were not many fields</p>
 		<p>In which you had hopes for me</p>
 		<p>But sport was one of them.</p>
@@ -27,10 +51,10 @@
 		<p>You drove all the way down,</p>
 		<p>Fifty miles,</p>
 		<p>To Mullingar to stand</p>
-		<p>On the sidelines and observe me.</p>
+		<a href="#section2"></a><p>On the sidelines and observe me.</p></a>
 	</div>
 	<br>
-	<div>
+	<div class="main" id="section2">
 		<p>I was fearful I would let down</p>
 		<p>Not only my team but you.</p>
 		<p>It was Gaelic football.</p>
@@ -43,10 +67,10 @@
 		<p>Were over six foot tall</p>
 		<p>Fifteen stone in weight.</p>
 		<p>All three of them, I was informed,</p>
-		<p>Cases of schizophrenia.</p>
+		<a href="#section3"></a><p>Cases of schizophrenia.</p></div></a>
 	</div>
 	<br>
-	<div>
+	<div class="main" id="section3">
 		<p>There was a rumour</p>
 		<p>That their centre-half forward</p>
 		<p>Was an alcoholic solicitor</p>
@@ -55,10 +79,10 @@
 		<p>But that he had no memory of it.</p>
 		<p>He had meant well - it was said.</p>
 		<p>His best friend had to emigrate</p>
-		<p>To Nigeria.</p>
+		<a href="#section4"></a><p>To Nigeria.</p></div></a>
 	</div>
 	<br>
-	<div>
+	<div class="main" id="section4">
 		<p>To my surprise,</p>
 		<p>I did not flinch in the goals.</p>
 		<p>I made three or four spectacular saves,</p>
@@ -77,10 +101,10 @@
 		<p>Having defeated Mullingar Mental Hospital</p>
 		<p>By 14 Goals and 38 points to 3 goals and 10 points -</p>
 		<p>Sniffing your approval, you shook hands with me.</p>
-		<p>'Well played, son'.</p>
+		<a href="#section5"></a><p>'Well played, son'.</p></a>
 	</div>
 	<br>
-	<div>
+	<div class="main" id="section5">
 		<p>I may not have been mesmeric</p>
 		<p>But I had not been mediocre.</p>
 		<p>In your eyes I had achieved something at last.</p>
